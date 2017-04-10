@@ -119,8 +119,8 @@ The parameters I used tested every number of features from 1 through 20:
 In the end, SelectKBest chose the following 5 best features with their corresponding scores:
 
 - [('total_payments', '24.82'), ('bonus', '24.18'), ('director_fees', '20.79'), ('restricted_stock', '18.29'), ('perc_poi_contact', '11.46')]
-     
-        (Interestingly, even though my features didn't seem to help or hurt the algorithms that much on the tests above, one of my created features "perc_poi_contact" was selected as a best feature.)
+
+(Interestingly again, even though my features didn't seem to help or hurt the algorithms that much on the tests above, "perc_poi_contact" was selected as a best feature.)
 
 I then tested these 5 best features on all three of the algorithms.  Besides GaussianNB, none of the results were promising. Even after some tweaking of the parameters for DecisionTreeClassifier and AdaBoostClassifier, I couldn't get Precision, Recall, and F1 scores all above 0.3:
 
